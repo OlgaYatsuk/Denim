@@ -5,7 +5,6 @@
   });
 
   const options = {
-    // arrows: true,
     accessibility: false,
     appendArrows: $('.brands-slider-controls'),
     prevArrow: '<a href="#" class="arrow-link arrow-link--prev"><i class="icon-left-open-big prev"></i></a>',
@@ -40,7 +39,7 @@
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centralMode: true
+          // centralMode: true,
         }
       }
       ]
