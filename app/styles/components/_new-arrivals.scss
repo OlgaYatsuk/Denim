@@ -1,0 +1,119 @@
+.new-arrivals {
+  margin-top: 75px;
+  @media screen and (min-width: 769px) {
+    margin-top: 158px;
+  }
+}
+
+.new-arrivals__header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.arrivals-wrapper {
+  margin-top: 75px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+
+  @media screen and (min-width: 595px) {
+    flex-flow: row wrap;
+    margin-top: 115px;
+  }
+
+  @media screen and (min-width: 1250px) {
+    justify-content: space-between;
+  }
+}
+
+.new-arrivals__block {
+  border: 5px #dacdbf solid;
+  //height: 350px;
+  //width: 93%;
+  height: 100%;
+  object-fit: cover;
+  @media screen and (min-width: 1150px) {
+    height: 820px;
+  }
+}
+
+.new-arrivals__link {
+  position: relative;
+  margin: 0 auto 42px;
+
+  @media screen and (min-width: 595px) {
+    width: 40%;
+    margin: 0 auto 62px;
+  }
+  @media screen and (min-width: 769px) {
+    margin-bottom: 112px;
+  }
+  @media screen and (min-width: 1150px) {
+    max-height: 820px;
+    width: 45%;
+  }
+}
+
+.new-arrivals__img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.hover-state {
+  top: 0;
+  position: absolute;
+  box-shadow:0 0 0 1000px rgba(179, 162, 130, 0.81) inset;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+  }
+  @media screen and (min-width:1150px){
+    max-height: 815px;
+  }
+}
+
+.new-arrivals__text{
+  padding: 45% 0;
+  text-align: center;
+  color: #fff;
+  max-width: 420px;
+  margin: 0 auto;
+  @media screen and (min-width: 600px) {
+    padding: 30% 0;
+  }
+  @media screen and (min-width:1150px){
+    padding: 55% 0;
+    border: 4px #fff solid;
+    margin: 41px auto;
+  }
+  @media screen and (min-width:1250px){
+    padding: 290px 0;
+    max-width: 520px;
+  }
+}
+
+.new-arrival-name {
+  margin-top: 40px;
+  font-size: 42px;
+  font-weight: bold;
+  @media screen and (min-width:1250px){
+    margin-top: 0;
+  }
+}
+
+.new-arrival-collection {
+  font-size: 20px;
+  margin-top: 9px;
+}
+
+.view-all {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 45px 0 20px;
+}

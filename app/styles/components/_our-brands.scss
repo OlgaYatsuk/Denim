@@ -1,0 +1,123 @@
+.our-brands {
+  margin-top: 75px;
+  //position: relative;
+
+  @media screen and (min-width: 769px) {
+    margin-top: 119px;
+  }
+}
+
+.our-brands__header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.brands-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 75px;
+  padding: 0 70px;
+
+  @media screen and (min-width: 769px) {
+    margin-top: 110px;
+  }
+}
+
+.brands-slider {
+  position: relative;
+  //max-width: 1175px
+}
+
+.our-brands__link {
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: '';
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 360px;
+    box-shadow: 0 0 0 128px rgba(81, 81, 81, 0.43) inset;
+  }
+
+  &:hover::before {
+    box-shadow: 0 0 0 128px rgba(81, 81, 81, 0.23) inset;
+  }
+}
+
+.brand-logo {
+  position: absolute;
+  z-index: 1;
+  //top: 50%;
+  //left: 50%;
+  //width: 100%;
+  //max-width: 100%;
+}
+
+.brand-logo-1 {
+  top: 165px;
+  right: 70px;
+}
+
+.brand-logo-2 {
+  top: 142px;
+  right: 75px;
+}
+
+.brand-logo-3 {
+  top: 143px;
+  right: 60px;
+}
+
+.brand-logo-4 {
+  top: 170px;
+  right: 53px;
+}
+
+.brand-name {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1250px) {
+    margin-bottom: 0;
+  }
+}
+
+.our-brands__header-link {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    color: #73635a;
+  }
+}
+
+.brands-slider-controls {
+  .arrow-link {
+    position: absolute;
+    font-size: 3em;
+    color: #000;
+    left: 0;
+    height: 50px;
+    width: 25px;
+    top: 50%;
+    margin: -25px 0 0;
+
+
+    &--next {
+      right: 30px;
+      left: auto;
+    }
+  }
+}
