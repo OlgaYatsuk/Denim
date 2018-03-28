@@ -1,0 +1,51 @@
+.banner-2 {
+  background-color: #a1907e;
+  color: #fff;
+  display: flex;
+  margin-top: 15px;
+  max-height: 315px;
+  overflow: hidden;
+}
+
+.banner-2__article {
+  margin: 61px auto 0;
+  width: 71.482889733840304%;
+
+}
+
+.banner-2__caption-1 {
+  font-size: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  @media screen and (min-width: 800px){
+    font-size: 27px;
+  }
+}
+
+.banner-2__caption-2 {
+  font-size: 40px;
+  margin-top: 23px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.17;
+  padding-bottom: 20px;
+
+  span {
+    display: block;
+  }
+
+  @media screen and (min-width: 630px){
+    font-size: 62px;
+    padding-bottom: 0;
+  }
+}
+
+.banner-2__img {
+  height: 100%;
+  width: 100%;
+  display: none;
+  @media screen and (min-width: 470px) {
+    display: inline;
+  }
+}
