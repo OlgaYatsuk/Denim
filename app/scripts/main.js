@@ -1,7 +1,53 @@
+
+
+
 (function () {
 
-  $('.header-menu__item').on('click', function () {
-    $('.header-submenu').stop().slideToggle();
+  class Menu {
+    constructor(sSelector) {
+      this.menu = $(sSelector);
+      this.createEvents()
+    }
+
+    toggleSubmenu(event) {
+      $(event.currentTarget).children('.header-submenu').stop().toggle();
+    }
+
+    showSubmenu(event) {
+      this.toggleSubmenu(event);
+    }
+
+    hideSubmenu(event) {
+      this.toggleSubmenu(event);
+    }
+
+    createEvents(){
+      this.menu.find('.header-menu__item')
+        .mouseover(this.showSubmenu.bind(this))
+        .mouseout(this.hideSubmenu.bind(this));
+    }
+  }
+
+  const menu = new Menu('.header-menu');
+
+  $('.country__link').on('click', function(e) {
+    e.preventDefault();
+    $('.country-submenu').stop().toggle();
+  });
+
+  $('.country-submenu').on('mouseleave', function(e) {
+    e.preventDefault();
+    $('.country-submenu').stop().toggle();
+  });
+
+  $('.lang__link').on('click', function(e) {
+    e.preventDefault();
+    $('.lang-submenu').stop().toggle();
+  });
+
+  $('.lang-submenu').on('mouseleave', function(e) {
+    e.preventDefault();
+    $('.lang-submenu').stop().toggle();
   });
 
   const options = {
@@ -12,7 +58,6 @@
     infinite: true,
     lazyLoad: 'progressive',
     pauseOnHover: true,
-    // TODO: check for viewport (CSS class)
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
